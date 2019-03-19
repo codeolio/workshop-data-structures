@@ -14,6 +14,7 @@ Stack.prototype.pop = function () {
 /*********************************************************/
 /*               BONUS - EXTENSION METHODS               */
 /*********************************************************/
+
 Stack.prototype.count = function () {
   // place code here
 };
@@ -27,19 +28,19 @@ Stack.prototype.isEmpty = function () {
 };
 
 Stack.prototype.peek = function () {
-  // testing depends on push
+  // place code here
 };
 
 Stack.prototype.toString = function () {
-  // testing depends on push
+  // place code here
 };
 
 Stack.prototype.toArray = function () {
-  // testing depends on push
+  // place code here
 };
 
 Stack.prototype.contains = function () {
-  // testing depends on push
+  // place code here
 };
 
 module.exports = Stack;
