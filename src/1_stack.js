@@ -62,7 +62,7 @@ Stack.prototype.pop = function () {
     - output: 2
 */
 Stack.prototype.count = function () {
-  // place code here
+  // insert code here
 };
 
 
@@ -78,7 +78,7 @@ Stack.prototype.count = function () {
     - length after: 0
 */
 Stack.prototype.clear = function () {
-  // place code here
+  // insert code here
 };
 
 /*
@@ -93,7 +93,7 @@ Stack.prototype.clear = function () {
     - output: true
 */
 Stack.prototype.isEmpty = function () {
-  // place code here
+  // insert code here
 };
 
 /*
@@ -105,7 +105,7 @@ Stack.prototype.isEmpty = function () {
     - output: 'C'
 */
 Stack.prototype.peek = function () {
-  // place code here
+  // insert code here
 };
 
 /*
@@ -117,7 +117,7 @@ Stack.prototype.peek = function () {
     - output: 'ABC'
 */
 Stack.prototype.toString = function () {
-  // place code here
+  // insert code here
 };
 
 /*
@@ -129,7 +129,7 @@ Stack.prototype.toString = function () {
     - output: ['A', 'B', 'C'] 
 */
 Stack.prototype.toArray = function () {
-  // place code here
+  // insert code here
 };
 
 /*
@@ -146,7 +146,7 @@ Stack.prototype.toArray = function () {
     - output: false
 */
 Stack.prototype.contains = function (value) {
-  // place code here
+  // insert code here
 };
 
 
