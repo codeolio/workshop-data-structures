@@ -1,0 +1,23 @@
+{
+  "name": "data_structures_challenge",
+  "version": "1.0.0",
+  "description": "workshop for public codeolio lecture on data structures",
+  "main": "index.html",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha ./__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeolio/workshop-data-structures.git"
+  },
+  "author": "david-dest01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeolio/workshop-data-structures/issues"
+  },
+  "homepage": "https://github.com/codeolio/workshop-data-structures#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
