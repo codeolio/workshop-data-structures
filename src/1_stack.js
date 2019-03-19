@@ -18,6 +18,7 @@ function Stack() {
 };
 
 /*
+  CHALLENGE 1
   * method: push
   * description: push method should add one or more value(s) to top of stack + adjust length, does not return value
   * example 1:
@@ -35,6 +36,7 @@ Stack.prototype.push = function (...value) {
 };
 
 /*
+  CHALLENGE 2
   * method: pop
   * description: pop method should return value from top of stack, removing it + reducing length by one
   * example 1:
@@ -51,6 +53,7 @@ Stack.prototype.pop = function () {
 /*********************************************************/
 
 /*
+  CHALLENGE 3
   * method: count
   * description: count method should return total values in stack
   * example 1:
@@ -64,6 +67,7 @@ Stack.prototype.count = function () {
 
 
 /*
+  CHALLENGE 4
   * method: clear
   * description: clear method should remove all elements from stack + adjust length. nothing is returned
   * example 1:
@@ -78,6 +82,7 @@ Stack.prototype.clear = function () {
 };
 
 /*
+  CHALLENGE 5
   * method: isEmpty
   * description: isEmpty should return a boolean value, true if stack is empty and false if stack has values
   * example 1:
@@ -92,6 +97,7 @@ Stack.prototype.isEmpty = function () {
 };
 
 /*
+  CHALLENGE 6
   * method: peek
   * description: peek method should return value at top of stack without removing it
   * example:
@@ -103,6 +109,7 @@ Stack.prototype.peek = function () {
 };
 
 /*
+  CHALLENGE 7
   * method: toString
   * description: toString method should return a string containing all values in stack, from bottom of stack to top
   * example:
@@ -114,6 +121,7 @@ Stack.prototype.toString = function () {
 };
 
 /*
+  CHALLENGE 8
   * method: toArray
   * description: toArray method should return an array containing all values,
   * example:
@@ -125,6 +133,7 @@ Stack.prototype.toArray = function () {
 };
 
 /*
+  CHALLENGE 9
   * method: contains
   * description: contains method should return a boolean value, true if stack contains value & false if not
   * example 1:
