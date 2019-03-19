@@ -7,14 +7,14 @@
  *              Details: For more information on stack, please review section ____ within the README
  *              Testing Your Code: 
  *                - To test code, run npm test in terminal and complete everything under Stack Data Structure
- *                - For extensions, remove 'x' before describe on line 77 in testing file then save.
+ *                - For extensions, remove 'x' before describe on line 58 in testing file then save.
  * ***********************************
  */
 
 
 function Stack() {
   this.contents = {};
-  this.length = 0;
+  this.size = 0;
 };
 
 /*
@@ -55,7 +55,7 @@ Stack.prototype.pop = function () {
 /*
   CHALLENGE 3
   * method: count
-  * description: count method should return total values in stack
+  * description: returns the total number of elements in the queue.
   * example 1:
     - s
     tack before: { '0': 'A', '1': 'B' }
@@ -69,11 +69,11 @@ Stack.prototype.count = function () {
 /*
   CHALLENGE 4
   * method: clear
-  * description: clear method should remove all elements from stack + adjust length. nothing is returned
+  * description: removes all elements from stack + resets length to 0. nothing is returned
   * example 1:
     - stack before: { '0': 'A', '1': 'B' }
     - length before: 2
-    ---------------------------------------
+    clear();
     - stack after: {}
     - length after: 0
 */
@@ -84,7 +84,7 @@ Stack.prototype.clear = function () {
 /*
   CHALLENGE 5
   * method: isEmpty
-  * description: isEmpty should return a boolean value, true if stack is empty and false if stack has values
+  * description: returns true if the stack does not contain any elements, and false if the stack size is greater than 0
   * example 1:
     - stack: { '0': 'A' }
     - output: false
@@ -111,7 +111,7 @@ Stack.prototype.peek = function () {
 /*
   CHALLENGE 7
   * method: toString
-  * description: toString method should return a string containing all values in stack, from bottom of stack to top
+  * description: should return a string containing all elements in stack, from first to last (0 -> n + 1) - if no elements, return empty string
   * example:
     - stack: { '0': 'A', '1': 'B', '2': 'C' }
     - output: 'ABC'
@@ -123,7 +123,7 @@ Stack.prototype.toString = function () {
 /*
   CHALLENGE 8
   * method: toArray
-  * description: toArray method should return an array containing all values,
+  * description: should return an array containing all values
   * example:
     - stack: { '0': 'A', '1': 'B', '2': 'C' }
     - output: ['A', 'B', 'C'] 
@@ -135,7 +135,7 @@ Stack.prototype.toArray = function () {
 /*
   CHALLENGE 9
   * method: contains
-  * description: contains method should return a boolean value, true if stack contains value & false if not
+  * description: return true if queue contains inputed value, false if not
   * example 1:
     - stack: { '0': 'A', '1': 'B', '2': 'C' }
     - input: contains('B');
@@ -145,11 +145,9 @@ Stack.prototype.toArray = function () {
     - input: contains('Z');
     - output: false
 */
-Stack.prototype.contains = function () {
+Stack.prototype.contains = function (value) {
   // place code here
 };
-
-
 
 
 // please do not touch
