@@ -1,5 +1,5 @@
 /**
- * ************************************
+ * ***********************************
  * @module  Stack
  * @author  david-dest01
  * @date    03/19/19
@@ -8,7 +8,7 @@
  *              Testing Your Code: 
  *                - To test code, run npm test in terminal and complete everything under Stack Data Structure
  *                - For extensions, remove 'x' before describe on line 77 in testing file then save.
- * ************************************
+ * ***********************************
  */
 
 
