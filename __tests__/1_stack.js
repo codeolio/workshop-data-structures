@@ -30,7 +30,7 @@ describe('Stack Data Structure', () => {
       expect(stack.__proto__).to.have.property('push').to.be.a('function');
     });
 
-    it('Push method should add a single value to the end of stack:', () => {
+    it('Challenge 1: Push method should add a single value to the end of stack:', () => {
       stack.push('A');
       expect(stack.contents['0']).to.equal('A');
       stack.push('B'); 
@@ -40,7 +40,7 @@ describe('Stack Data Structure', () => {
       expect(stack.length).to.equal(3);
     });
 
-    it('Push method should add multiple values to the end of the stack:', () => {
+    it('Challenge 1: Push method should add multiple values to the end of the stack:', () => {
       stack.push('A', 'B', 'C', 'D');
       expect(stack.contents['0']).to.equal('A');
       expect(stack.contents['1']).to.equal('B');
@@ -59,7 +59,7 @@ describe('Stack Data Structure', () => {
       expect(stack.__proto__).to.have.property('push').to.be.a('function');
     });
 
-    it('Should return the last value pushed to the stack WITHOUT going negative', () => {
+    it('Challenge 2: Should return the last value pushed to the stack WITHOUT going negative', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -82,7 +82,7 @@ describe('Stack Data Structure', () => {
     it('Count Method: Should have a count method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('count').to.be.a('function');
     });
-    it('Count Method: Count method should return total values in stack', () => {
+    it('Challenge 3 - Count Method: Count method should return total values in stack', () => {
       stack.push('A');
       expect(stack.count()).to.equal(1);
       stack.push('B');
@@ -94,7 +94,7 @@ describe('Stack Data Structure', () => {
     it('Clear Method: Should have a clear method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('clear').to.be.a('function');
     });
-    it('Clear Method: Clear method should empty stack but not delete stack. Does not return any value', () => {
+    it('Challenge 4 - Clear Method: Clear method should empty stack but not delete stack. Does not return any value', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -109,7 +109,7 @@ describe('Stack Data Structure', () => {
     it('isEmpty Method: Should have a isEmpty method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('isEmpty').to.be.a('function');
     });
-    it('isEmpty Method: isEmpty should return true if stack is empty, false if not', () => {
+    it('Challenge 5 - isEmpty Method: isEmpty should return true if stack is empty, false if not', () => {
       expect(stack.isEmpty()).be.true;
       stack.push('A');
       expect(stack.length).to.equal(1);
@@ -120,7 +120,7 @@ describe('Stack Data Structure', () => {
     it('Peek Method: Should have a peek method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('clear').to.be.a('function');
     });
-    it('Peek Method: Peek method should return element at top of stack', () => {
+    it('Challenge 6 - Peek Method: Peek method should return element at top of stack', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -132,7 +132,7 @@ describe('Stack Data Structure', () => {
     it('toString Method: Should have a toString method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('toString').to.be.a('function');
     });
-    it('toString Method: toString should return a string value representing the elements in the stack from bottom to top', () => {
+    it('Challenge 7 - toString Method: toString should return a string value representing the elements in the stack from bottom to top', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -143,7 +143,7 @@ describe('Stack Data Structure', () => {
     it('toArray Method: Should have a toArray method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('toArray').to.be.a('function');
     });
-    it('toArray Method: toArray method should return an array containing the elements in the stack from bottom to top', () => {
+    it('Challenge 8 - toArray Method: toArray method should return an array containing the elements in the stack from bottom to top', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -154,7 +154,7 @@ describe('Stack Data Structure', () => {
     it('Contains Method: Should have a contains method on the cunstructors prototype', () => {
       expect(stack.__proto__).to.have.property('contains').to.be.a('function');
     });
-    it('Contains Method: Contains method should return true if value is in structure, false if not', () => {
+    it('Challenge 9 - Contains Method: Contains method should return true if value is in structure, false if not', () => {
       stack.push('A');
       stack.push('B');
       expect(stack.contains('A')).be.true;
