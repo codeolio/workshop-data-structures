@@ -69,7 +69,7 @@ describe('Stack Data Structure', () => {
       expect(stack.pop()).to.equal('B');
       expect(stack.pop()).to.equal('A');
       expect(stack.pop()).to.be.undefined;
-      expect(stack.length).to.eql(0);
+      expect(stack.length).to.equal(0);
     });
   });
 
