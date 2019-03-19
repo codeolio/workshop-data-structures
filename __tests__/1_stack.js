@@ -32,22 +32,20 @@ describe('Stack Data Structure', () => {
 
     it('Push method should add a single value to the end of stack:', () => {
       stack.push('A');
-      expect(stack['0']).to.equal('A');
-      stack.push('B');
-      expect(stack['1']).to.equal('B');
+      expect(stack.contents['0']).to.equal('A');
+      stack.push('B'); 
+      expect(stack.contents['1']).to.equal('B');
       stack.push('C');
-      expect(stack['2']).to.equal('C');
-      stack.push('D');
-      expect(stack['3']).to.equal('D');
+      expect(stack.contents['2']).to.equal('C');
       expect(stack.length).to.equal(3);
     });
 
     it('Push method should add multiple values to the end of the stack:', () => {
       stack.push('A', 'B', 'C', 'D');
-      expect(stack['0']).to.equal('A');
-      expect(stack['1']).to.equal('B');
-      expect(stack['2']).to.equal('C');
-      expect(stack['3']).to.equal('D');
+      expect(stack.contents['0']).to.equal('A');
+      expect(stack.contents['1']).to.equal('B');
+      expect(stack.contents['2']).to.equal('C');
+      expect(stack.contents['3']).to.equal('D');
       expect(stack.length).to.equal(4);
     });
   });
@@ -103,9 +101,9 @@ describe('Stack Data Structure', () => {
       expect(stack.length).to.equal(0);
       exepct(stack.clear()).to.be.undefined;
       expect(stack.length).to.equal(0);
-      expect(stack['0']).to.be.undefined;
-      expect(stack['1']).to.be.undefined;
-      expect(stack['2']).to.be.undefined;
+      expect(stack.contents['0']).to.be.undefined;
+      expect(stack.contents['1']).to.be.undefined;
+      expect(stack.contents['2']).to.be.undefined;
     });
 
     it('Should have a isEmpty method on the cunstructors prototype', () => {
@@ -115,7 +113,7 @@ describe('Stack Data Structure', () => {
       expect(stack.isEmpty()).be.true;
       stack.push('A');
       expect(stack.length).to.equal(1);
-      expect(stack['1']).to.equal('A');
+      expect(stack.contents['1']).to.equal('A');
       expect(stack.isEmpty()).be.false;
     });
 
