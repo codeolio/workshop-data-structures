@@ -1,31 +1,31 @@
-/**
- * ********************************************************************************************************************************************
+/**********************************************************************************************************************************************
  * @module  Queue
  * @author  david-dest01
  * @date    03/19/19
- * @description Begin challenge below. 
+ * @description Begin Queue challenge below. 
  *              Details: For more information on Queue, please review section ____ within the README
  *              Testing Your Code: 
  *                - To test code, run npm test in terminal and complete everything under Queue data structure
  *                - For extensions, remove 'x' before describe on line ____ in testing file then save.
- * ********************************************************************************************************************************************
- */
+ **********************************************************************************************************************************************/
 
 function Queue() {
   this.contents = {};
   this.size = 0;    
 };
 
-/*
-  CHALLENGE 1
+/* CHALLENGE 1
   * method: enqueue
-  * description: enqueue method adds a new element at the back of the queue
+  * description:
+    - enqueue method adds a new element at the back of the queue
+    - updates size
   * example 1 - single value:
-    - queue before: { }
-    - input: push('A')
-    - queue after: { '0': 'A' }
+    - queue before: { 0: 'A' }
+    - input: push('B')
+    - queue after: { '0': 'A', 1: 'B' }
 
-    example 2 - multiple values: 
+    BONUS
+  * example 2 - multiple values: 
     - queue before: { '0': 'A' }
     - input: push('B', 'C', 'D')
     - queue after: { '0': 'A', '1': 'B', '2': 'C', '3': 'D' }
@@ -34,10 +34,12 @@ Queue.prototype.enqueue = function (value) {
   // insert code here
 };
 
-/*
-  CHALLENGE 2
+/* CHALLENGE 2
   * method: dequeue
-  * description: method removes the first element from the queue (the item at the from of th equeue). it also returns the removed element
+  * description: 
+    - method removes the first element from the queue (the item at the from of th equeue)
+    - it also returns the removed element
+    - updates size
   * example 1:
     - queue before: { '0': 'A', '1': 'B', '2': 'C' }
     - output: 'A'
@@ -51,26 +53,23 @@ Queue.prototype.dequeue = function () {
 /*                                             BONUS - EXTENSION METHODS                                                        */
 /********************************************************************************************************************************/
 
-/*
-  CHALLENGE 3
+/* CHALLENGE 3
   * method: count
-  * description: returns the total number of elements in the queue.
-  * example 1:
+  * description: returns the total number of elements in the queue
+  * example:
     - queue: { '0': 'A', '1': 'B' }
     - output: 2
-  * example 2:
-    - queue: {}
-    - output: 0
 */
 Queue.prototype.count = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 4
+/* CHALLENGE 4
   * method: clear
-  * description: removes all elements from queue + resets length to 0. nothing is returned
-  * example 1:
+  * description: 
+    - removes all elements from queue, does not return value
+    - resets size to 0
+  * example:
     - queue before: { '0': 'A', '1': 'B' }
     - length before: 2
     clear();
@@ -81,8 +80,7 @@ Queue.prototype.clear = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 5
+/* CHALLENGE 5
   * method: isEmpty
   * description: returns true if the queue does not contain any elements, and false if the queue size is greater than 0
   * example 1:
@@ -96,22 +94,23 @@ Queue.prototype.isEmpty = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 6
+/* CHALLENGE 6
   * method: peek
   * description: should return the first element from queue (first to be removed) - should NOT remove the element from queue
   * example:
-    - queue: { '0': 'A', '1': 'B', '2': 'C' }
+    - queue before: { '0': 'A', '1': 'B', '2': 'C' }
     - output: 'A'
+    - queue after: { '0': 'A', '1': 'B', '2': 'C' }
 */
 Queue.prototype.peek = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 7
+/* CHALLENGE 7
   * method: toString
-  * description: should return a string containing all values in queue, from first to last (0 -> n + 1) - if no elements, return empty string
+  * description: 
+    - should return a string containing all values in queue
+    -  if no elements, return empty string
   * example:
     - queue: { '0': 'A', '1': 'B', '2': 'C' }
     - output: 'ABC'
@@ -120,10 +119,9 @@ Queue.prototype.toString = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 8
+/* CHALLENGE 8
   * method: toArray
-  * description: should return an array containing all values
+  * description: should return an array containing all values. If empty return empty array
   * example:
     - queue: { '0': 'A', '1': 'B', '2': 'C' }
     - output: ['A', 'B', 'C'] 
@@ -132,8 +130,7 @@ Queue.prototype.toArray = function () {
   // insert code here
 };
 
-/*
-  CHALLENGE 9
+/* CHALLENGE 9
   * method: contains
   * description: return true if queue contains inputed value, false if not
   * example 1:
@@ -142,7 +139,7 @@ Queue.prototype.toArray = function () {
     - output: true
   * example 2:
     - queue: { '0': 'A', '1': 'B', '2': 'C' }
-    - input: contains('Z');
+    - input: contains('D');
     - output: false
 */
 Queue.prototype.contains = function (value) {
