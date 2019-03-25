@@ -92,10 +92,10 @@ xdescribe('Array (Erray) Data Structure', () => {
       array.push('B');
       array.push('B');
       array.push('D');
-      expect(array.index('A')).to.equal(0);
-      expect(array.index('B')).to.equal(1);
-      expect(array.index('B')).to.not.equal(2);
-      expect(array.index('D')).to.equal(3);
+      expect(array.indexOf('A')).to.equal(0);
+      expect(array.indexOf('B')).to.equal(1);
+      expect(array.indexOf('B')).to.not.equal(2);
+      expect(array.indexOf('D')).to.equal(3);
     });
 
     it('Challenge 6 - lastIndexOf: returns the position (index) of the last item in the Erray that matches the input value', () => {
