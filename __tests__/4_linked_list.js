@@ -8,7 +8,7 @@ const { LinkedList, Node } = require('../src/4_linked_list.js')
 describe('Linked List Structure', () => {
   let ll = null;
   
-  describe('LinkedList: Adding and Removing', () => {
+  describe('Linked List: Adding and Removing', () => {
     beforeEach(() => {
       ll = new LinkedList;
       node = new Node;
