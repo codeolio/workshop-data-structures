@@ -123,7 +123,7 @@ LinkedList.prototype.toArray = function () {
 
 /* CHALLENGE 12
   * method: getHead
-  * description: retrieves the value from the first node of the list (head)
+  * description: retrieves the value from the first node of the list (head). returns null if no head;
 */ 
 LinkedList.prototype.getHead = function () {
   // insert code here
@@ -131,7 +131,7 @@ LinkedList.prototype.getHead = function () {
 
 /* CHALLENGE 13
   * method: getTail
-  * description: retrieves last value from the last node in the list (tail)
+  * description: retrieves last value from the last node in the list (tail) returns null if no tail;
 */ 
 LinkedList.prototype.getTail = function () {
   // insert code here
@@ -141,7 +141,7 @@ LinkedList.prototype.getTail = function () {
   * method: size
   * description: returns the total number of nodes in linked list 
 */ 
-LinkedList.prototype.size = function () {
+LinkedList.prototype.totalNodes = function () {
   // insert code here
 };
 
