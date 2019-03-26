@@ -22,7 +22,7 @@ describe('Binary Search Tree Data Structures', () => {
     });
     
     it('Challenge 1: Insert should add a new value (subtree) to tree', () => {
-      expect(ll.__proto__).to.have.property('insert').to.be.a('function');
+      expect(bst.__proto__).to.have.property('insert').to.be.a('function');
       const treeValues = [10, 5, 8, 1, 15, 13, 17];
       treeValues.forEach((value) => {
         bst.insert(value);
@@ -40,7 +40,7 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 2: searches for the key in the tree and returns true if it exists and false if the node does not', () => {
-      expect(ll.__proto__).to.have.property('search').to.be.a('function');
+      expect(bst.__proto__).to.have.property('search').to.be.a('function');
       /* ----------   valid subtrees ---------- */
       expect(bst.search(10)).to.be.true;
       expect(bst.search(5)).to.be.true;
@@ -57,7 +57,7 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 3: inOrderTraverse() visits all nodes of the tree using in-order traverse', () => {
-      expect(ll.__proto__).to.have.property('inOrderTraverse').to.be.a('function');
+      expect(bst.__proto__).to.have.property('inOrderTraverse').to.be.a('function');
       const results = [];
       const callback = (value) => results.push(value);
       bst.inOrderTraverse(callback);
@@ -65,7 +65,7 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 4: preOrderTraverse() visits all nodes of the tree using pre-order traverse', () => {
-      expect(ll.__proto__).to.have.property('preOrderTraverse').to.be.a('function');
+      expect(bst.__proto__).to.have.property('preOrderTraverse').to.be.a('function');
       const results = [];
       const callback = (value) => results.push(value);
       bst.preOrderTraverse(callback);
@@ -73,15 +73,15 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 5: postOrderTraverse() vists all nodes of the tree using post-order traverse', () => {
-      expect(ll.__proto__).to.have.property('postOrderTraverse').to.be.a('function');
+      expect(bst.__proto__).to.have.property('postOrderTraverse').to.be.a('function');
       const results = [];
       const callback = (value) => results.push(value);
       bst.postOrderTraverse(callback);
-      expect(results).to.have.ordered.members([1, 5, 8, 13, 17, 15, 10]); 
+      expect(results).to.have.ordered.members([1, 8, 5, 13, 17, 15, 10]); 
     });
 
     it('Challenge 6: breadthTraversal() vists all nodes of the tree by level', () => {
-      expect(ll.__proto__).to.have.property('breadthTraversal').to.be.a('function');
+      expect(bst.__proto__).to.have.property('breadthTraversal').to.be.a('function');
       const results = [];
       const callback = (value) => results.push(value);
       bst.postOrderTraverse(callback);
@@ -100,17 +100,17 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 7: Min returns the minimum value/key in the tree', () => {
-      expect(ll.__proto__).to.have.property('min').to.be.a('function');
+      expect(bst.__proto__).to.have.property('min').to.be.a('function');
       expect(bst.min()).to.equal(1);
     });
 
     it('Challenge 8: Max returns the maximum value/key in the tree', () => {
-      expect(ll.__proto__).to.have.property('max').to.be.a('function');
+      expect(bst.__proto__).to.have.property('max').to.be.a('function');
       expect(bst.max()).to.equal(17);
     });
 
-    it('Challenge 9: Remove should removes the key from the tree', () => {
-      expect(ll.__proto__).to.have.property('remove').to.be.a('function');
+    it('Challenge 9: Remove should remove the key from the tree', () => {
+      expect(bst.__proto__).to.have.property('remove').to.be.a('function');
       bst.remove(1)
       bst.remove(15);
       /* ----------   root node   ---------- */
