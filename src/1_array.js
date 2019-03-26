@@ -78,7 +78,7 @@ Erray.prototype.shift = function (value) {
     - input: unshift()
     - array after: { 0: 'B', 1: 'C' }
 */ 
-Erray.prototype.unshift - function () {
+Erray.prototype.unshift = function () {
   // insert code here
 };
 
