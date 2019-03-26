@@ -56,14 +56,14 @@ describe('Linked List Structure', () => {
       expect(ll.head).to.be.null;
       expect(ll.tail).to.be.null;
       ll.addToHead('A');
-      expect(ll.head).to.equal('A');
-      expect(ll.tail).to.equal('A');
+      expect(ll.head.value).to.equal('A');
+      expect(ll.tail.value).to.equal('A');
       expect(ll.head).to.equal(ll.tail);
       expect(ll.size).to.equal(1);
       ll.addToHead('B');
-      expect(ll.head).to.equal('B');
+      expect(ll.head.value).to.equal('B');
       expect(ll.head.next.value).to.equal('A');
-      expect(ll.tail).to.equal('A');
+      expect(ll.tail.value).to.equal('A');
       expect(ll.size).to.equal(2);
     });
 
@@ -83,22 +83,22 @@ describe('Linked List Structure', () => {
       ll.push('A');
       ll.push('B');
       ll.push('C');
-      remove('B');
+      expect(remove('B')).to.equal('B');
       expect(ll.head.value).to.equal('A');
       expect(ll.head.next.value).to.equal('C');
       expect(ll.tail.value).to.equal('C');
       expect(ll.size).to.equal(2);
-      remove('C');
+      expect(remove('C')).to.equal('C');
       expect(ll.head.value).to.equal('A');
       expect(ll.tail.value).to.equal('A');
       expect(ll.size).to.equal(1);
-      remove('A');
+      expect(remove('A')).to.equal('A');
       expect(ll.head).to.be.null;
       expect(ll.tail).to.be.null;
       expect(ll.size).to.equal(0);
     });
 
-    it('Challenge 5: removes the head node of linked list, adjusts head pointer to subsequent node in linked list', () => {
+    it('Challenge 5: removeHead removes the head node of linked list, adjusts head pointer to subsequent node in linked list', () => {
       expect(ll.__proto__).to.have.property('removeHead').to.be.a('function');
       ll.push('A');
       ll.push('B');
@@ -106,25 +106,25 @@ describe('Linked List Structure', () => {
       expect(ll.head.value).to.equal('A');
       expect(ll.head.next.value).to.equal('B');
       expect(ll.head.next.next.value).to.equal('C');
-      expect(ll.tail).to.equal('C');
+      expect(ll.tail.value).to.equal('C');
       expect(ll.size).to.equal(3);
-      ll.removeHead(); // remove node A
+      expect(ll.removeHead()).to.equal('A'); // remove node A
       expect(ll.head.value).to.equal('B');
       expect(ll.head.next.value).to.equal('C');
       expect(ll.tail).to.equal('C');
       expect(ll.size).to.equal(2);
-      ll.removeHead(); // remove node B
+      expect(ll.removeHead()).to.equal('B'); // remove node B
       expect(ll.head.value).to.equal('C');
       expect(ll.head.next).to.be.null;
       expect(ll.tail.value).to.equal('C');
       expect(ll.size).to.equal(1);
-      ll.removeHead(); // remove node C
+      expect(ll.removeHead()).to.equal('C'); // remove node C
       expect(ll.head).to.be.null;
       expect(ll.tail).to.be.null;
       expect(ll.size).to.equal(0);
     });
 
-    it('Challenge 6: removes tail node from linked list. adjusts tail pointer to point at preceding node', () => {
+    it('Challenge 6: removeTail removes tail node from linked list. adjusts tail pointer to point at preceding node', () => {
       expect(ll.__proto__).to.have.property('removeTail').to.be.a('function');
       ll.push('A');
       ll.push('B');
@@ -132,19 +132,19 @@ describe('Linked List Structure', () => {
       expect(ll.head.value).to.equal('A');
       expect(ll.head.next.value).to.equal('B');
       expect(ll.head.next.next.value).to.equal('C');
-      expect(ll.tail).to.equal('C');
+      expect(ll.tail.value).to.equal('C');
       expect(ll.size).to.equal(3);
-      ll.removeTail(); // remove node C
+      expect(ll.removeTail()).to.equal('C'); // remove node C
       expect(ll.head.value).to.equal('A');
       expect(ll.head.next.value).to.equal('B');
-      expect(ll.tail).to.equal('B');
+      expect(ll.tail.value).to.equal('B');
       expect(ll.size).to.equal(2);
-      ll.removeHead(); // remove node B
+      expect(ll.removeTail()).to.equal('B'); // remove node B
       expect(ll.head.value).to.equal('A');
       expect(ll.head.next).to.be.null;
       expect(ll.tail.value).to.equal('A');
       expect(ll.size).to.equal(1);
-      ll.removeHead(); // remove node A
+      expect(ll.removeTail()).to.equal('A'); // remove node A
       expect(ll.head).to.be.null;
       expect(ll.tail).to.be.null;
       expect(ll.size).to.equal(0);
@@ -204,16 +204,16 @@ describe('Linked List Structure', () => {
       ll.push('A');
       ll.push('B');
       ll.push('C');
-      expect(ll.toString()).to.be.a('string').to.equal('ABC'); // test this
+      expect(ll.toString()).to.be.a('string').to.equal('ABC'); 
     });
 
     it('Challenge 11: toArray returns an array representation of linked list', () => {
       expect(ll.__proto__).to.have.property('toArray').to.be.a('function');
-      expect(ll.toArray()).to.equal([]);
+      expect(ll.toArray()).to.be.an('array').that.is.empty;
       ll.push('A');
       ll.push('B');
       ll.push('C');
-      expect(ll.toArray()).to.be.an('array').to.eql(['A', 'B', 'C']); // test this
+      expect(ll.toArray()).to.have.ordered.members(['A', 'B', 'C']); 
     });
 
     it('Challenge 12: getHead retrieves the value from the first node of the list (head)', () => {
@@ -232,19 +232,19 @@ describe('Linked List Structure', () => {
       expect(ll.getTail()).to.equal('A');
       ll.push('B');
       expect(ll.getTail()).to.equal('B');
-      ll.push('B');
+      ll.push('C');
       expect(ll.getTail()).to.equal('C');
     });
 
-    it('Challenge 12: size returns the total number of nodes in linked list ', () => {
-      expect(ll.__proto__).to.have.property('size').to.be.a('function');
-      expect(ll.size()).to.equal(0);
+    it('Challenge 12: totalNodes returns the total number of nodes in linked list ', () => {
+      expect(ll.__proto__).to.have.property('totalNodes').to.be.a('function');
+      expect(ll.totalNodes()).to.equal(0);
       ll.push('A');
-      expect(ll.size()).to.equal(1);
+      expect(ll.totalNodes()).to.equal(1);
       ll.push('B');
-      expect(ll.size()).to.equal(2);
+      expect(ll.totalNodes()).to.equal(2);
       ll.push('B');
-      expect(ll.size()).to.equal(3);
+      expect(ll.totalNodes()).to.equal(3);
     });
   })
 });
