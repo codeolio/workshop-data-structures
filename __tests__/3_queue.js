@@ -67,13 +67,13 @@ xdescribe('Queue Data Structure', () => {
       expect(queue.count()).to.equal(3);
     });
 
-    it('Challenge 4 - Clear Method: Clear method should empty queue but not delete stack. Does not return any value', () => {
+    it('Challenge 4 - Clear Method: Clear method should empty queue but not delete queue. Does not return any value', () => {
       expect(queue.__proto__).to.have.property('clear').to.be.a('function');
       queue.enqueue('A');
       queue.enqueue('B');
       queue.enqueue('C');
       expect(queue.size).to.equal(0);
-      exepct(queue.clear()).to.be.undefined;
+      queue.clear();
       expect(queue.size).to.equal(0);
       expect(queue.contents['0']).to.be.undefined;
       expect(queue.contents['1']).to.be.undefined;
@@ -85,13 +85,12 @@ xdescribe('Queue Data Structure', () => {
       expect(queue.isEmpty()).be.true;
       queue.enqueue('A');
       expect(queue.size).to.equal(1);
-      expect(queue.contents['1']).to.equal('A');
+      expect(queue.contents['0']).to.equal('A');
       expect(queue.isEmpty()).be.false;
     });
 
-    it('Challenge 6 - Peek Method: Peek method should return element at the beginning of the stack', () => {
+    it('Challenge 6 - Peek Method: Peek method should return element at the beginning of the queue', () => {
       expect(queue.__proto__).to.have.property('peek').to.be.a('function');
-      expect(queue.peek()).be.false;
       queue.enqueue('A');
       queue.enqueue('B');
       queue.enqueue('C');
@@ -100,22 +99,22 @@ xdescribe('Queue Data Structure', () => {
       expect(queue.peek()).to.equal('B');
     });
 
-    it('Challenge 7 - toString: toString should return a string value representing stack values from front to end', () => {
+    it('Challenge 7 - toString: toString should return a string value representing queue values from front to end', () => {
       expect(queue.__proto__).to.have.property('toString').to.be.a('function');
-      queue.enqueu('A');
-      queue.enqueu('B');
-      queue.enqueu('C');
-      queue.enqueu('D');
+      queue.enqueue('A');
+      queue.enqueue('B');
+      queue.enqueue('C');
+      queue.enqueue('D');
       expect(queue.toString()).to.equal('ABCD');
     });
 
     it('Challenge 8 - to Array: toArray method return an array containing the values in the queue from beginning to end', () => {
       expect(queue.__proto__).to.have.property('toArray').to.be.a('function');
-      queue.enqueu('A');
-      queue.enqueu('B');
-      queue.enqueu('C');
-      queue.enqueu('D');
-      exect(queue.toArray()).to.eql(['A', 'B', 'C', 'D']);
+      queue.enqueue('A');
+      queue.enqueue('B');
+      queue.enqueue('C');
+      queue.enqueue('D');
+      exect(queue.toArray()).to.have.ordered.members(['A', 'B', 'C', 'D']);
     });
 
     it('Challenge 9 - Contains Method: Contains method should return true if value is in queue, false if not', () => {
