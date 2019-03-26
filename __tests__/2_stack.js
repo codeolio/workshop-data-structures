@@ -76,8 +76,8 @@ xdescribe('Stack Data Structure', () => {
       stack.push('A');
       stack.push('B');
       stack.push('C');
-      expect(stack.size).to.equal(0);
-      exepct(stack.clear()).to.be.undefined;
+      expect(stack.size).to.equal(3);
+      stack.clear();
       expect(stack.size).to.equal(0);
       expect(stack.contents['0']).to.be.undefined;
       expect(stack.contents['1']).to.be.undefined;
@@ -89,13 +89,12 @@ xdescribe('Stack Data Structure', () => {
       expect(stack.isEmpty()).be.true;
       stack.push('A');
       expect(stack.size).to.equal(1);
-      expect(stack.contents['1']).to.equal('A');
+      expect(stack.contents['0']).to.equal('A');
       expect(stack.isEmpty()).be.false;
     });
 
     it('Challenge 6 - Peek Method: Peek method should return element at top of stack', () => {
       expect(stack.__proto__).to.have.property('clear').to.be.a('function');
-      expect(stack.peek()).be.false;
       stack.push('A');
       stack.push('B');
       stack.push('C');
@@ -119,7 +118,7 @@ xdescribe('Stack Data Structure', () => {
       stack.push('B');
       stack.push('C');
       stack.push('D');
-      exect(stack.toArray()).to.eql(['A', 'B', 'C', 'D']);
+      expect(stack.toArray()).to.have.ordered.members(['A', 'B', 'C', 'D']);
     });
 
     it('Challenge 9 - Contains Method: Contains method should return true if value is in structure, false if not', () => {
