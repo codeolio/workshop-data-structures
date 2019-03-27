@@ -25,6 +25,10 @@ function Node (value) {
   * description: 
     - adds a new node to the end of the linked list
     - updates size
+  * example
+    - before: A -> B -> C -> null
+    input: D
+    - after: A -> B -> C -> D -> null
 */
 LinkedList.prototype.push = function (value) {
   // insert code here
@@ -35,6 +39,10 @@ LinkedList.prototype.push = function (value) {
   * description: 
     - adds a new node to the head of the linked list
     - updates size
+  * example
+    - before: B -> C -> D -> null
+    input: A
+    - after: A -> B -> C -> D -> null
 */
 LinkedList.prototype.addToHead = function(value) {
   // insert code here
@@ -45,6 +53,10 @@ LinkedList.prototype.addToHead = function(value) {
   * description: 
     - returns the index of the node in the list 
     - if it doesn't exist in the list it returns -1
+  * example
+    - linked list: A -> B -> C -> null
+    input: C
+    output: 2
 */
 LinkedList.prototype.indexOf = function (value) {
   // insert code here
@@ -55,6 +67,10 @@ LinkedList.prototype.indexOf = function (value) {
   * description: 
     - removes a node from the linked list. returns removed value
     - updates size
+  * example
+    - before: A -> B -> C -> null
+    input: B
+    - after: A -> C -> null
 */
 LinkedList.prototype.remove = function (value) {
   // insert code here
@@ -63,15 +79,22 @@ LinkedList.prototype.remove = function (value) {
 /* CHALLENGE 5
   * method: removeHead
   * description: removes the head node of linked list, adjusts head pointer to subsequent node in linked list
+  * example
+    - before: A -> B -> C -> null
+    removeHead()
+    - after: B -> C -> null
 */
 LinkedList.prototype.removeHead = function(value) {
   // insert code here
 };
 
-
 /* CHALLENGE 6
   * method: removeTail
   * description: removes tail node from linked list. adjusts tail pointer to point at preceding node
+  * example
+    - before: A -> B -> C -> null
+    removeTail()
+    - after: A -> B -> null
 */
 LinkedList.prototype.removeTail = function(value) {
   // insert code here
@@ -80,6 +103,10 @@ LinkedList.prototype.removeTail = function(value) {
 /* CHALLENGE 7
   * method: getByIndex
   * description: retrives nove value based on provided index
+  * example
+    - linked list: A -> B -> C -> null
+    input: 2
+    output: C
 */ 
 LinkedList.prototype.getByIndex = function (index) {
   // insert code here
@@ -92,6 +119,10 @@ LinkedList.prototype.getByIndex = function (index) {
 /* CHALLENGE 8
   * method: removeByIndex
   * description: removes node at given index
+  * example
+    - before: A -> B -> C -> null
+    input: 2
+    - after:  A -> B -> null
 */ 
 LinkedList.prototype.removeByIndex = function(index) {
   // insert code here
@@ -100,6 +131,10 @@ LinkedList.prototype.removeByIndex = function(index) {
 /* CHALLENGE 9
   * method: isEmpty 
   * description: returns true if the linked list does not contain any nodes, and false if the size is bigger than 0
+  * example
+    - linked list: A -> B -> C -> null
+    isEmpty()
+    - output: false
 */ 
 LinkedList.prototype.isEmpty = function() {
   // insert code here
@@ -108,6 +143,10 @@ LinkedList.prototype.isEmpty = function() {
 /* CHALLENGE 10
   * method: toString
   * description: returns a string representation of linked list
+  * example
+    - linked list: A -> B -> C -> null
+    toString()
+    - output: 'ABC'
 */ 
 LinkedList.prototype.toString = function () {
   // insert code here
@@ -116,6 +155,10 @@ LinkedList.prototype.toString = function () {
 /* CHALLENGE 11
   * method: toArray
   * description: returns and array representation of linked list
+  * example
+    - linked list: A -> B -> C -> null
+    toArray()
+    - output: ['A', 'B', 'C']
 */ 
 LinkedList.prototype.toArray = function () {
   // insert code here
@@ -124,6 +167,10 @@ LinkedList.prototype.toArray = function () {
 /* CHALLENGE 12
   * method: getHead
   * description: retrieves the value from the first node of the list (head). returns null if no head;
+  * example
+    - linked list: A -> B -> C -> null
+    getHead()
+    - output: 'A'
 */ 
 LinkedList.prototype.getHead = function () {
   // insert code here
@@ -132,14 +179,22 @@ LinkedList.prototype.getHead = function () {
 /* CHALLENGE 13
   * method: getTail
   * description: retrieves last value from the last node in the list (tail) returns null if no tail;
+  * example
+    - linked list: A -> B -> C -> null
+    getTail()
+    - output: 'C'
 */ 
 LinkedList.prototype.getTail = function () {
   // insert code here
 };
 
 /* CHALLENGE 14
-  * method: size
-  * description: returns the total number of nodes in linked list 
+  * method: totalNodes
+  * description: totalNodes returns the total number of nodes in linked list 
+  * example
+    - linked list: A -> B -> C -> null
+    totalNodes()
+    - output: 3
 */ 
 LinkedList.prototype.totalNodes = function () {
   // insert code here
