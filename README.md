@@ -35,14 +35,14 @@ Again, depending on how this structure is being implemented, there may be some p
 
 There's no better way to learn about what the array is and does than to build one yourself! Your challenges are below: 
 
-- [] Challenge 1: Push method should add a single value to the end of the array, adjust length
-- [] Challenge 1.5: (BONUS!) Refactor your push method so that it can add multiple values to the end of the array, adjust length
-- [] Challenge 2: Pop should return the last value pushed to the array, adjust length (don't go negative!)
-- [] Challenge 3: Shift method should add one value to the beginning of the array, adjust length
-- [] Challenge 3.5: (BONUS!) Refactor shift method so that it adds multiple values to the beginning of the array
-- [] Challenge 4: Unshift should remove and return the first element at the beginning of the array
-- [] Challenge 5: indexOf should return the position (index) of the first element in the Erray that matches the input value
-- [] Challenge 6: lastIndexOf should return the position (index) of the last item in the Erray that matches the input value
+- [ ] Challenge 1: Push method should add a single value to the end of the array, adjust length
+- [ ] Challenge 1.5: (BONUS!) Refactor your push method so that it can add multiple values to the end of the array, adjust length
+- [ ] Challenge 2: Pop should return the last value pushed to the array, adjust length (don't go negative!)
+- [ ] Challenge 3: Shift method should add one value to the beginning of the array, adjust length
+- [ ] Challenge 3.5: (BONUS!) Refactor shift method so that it adds multiple values to the beginning of the array
+- [ ] Challenge 4: Unshift should remove and return the first element at the beginning of the array
+- [ ] Challenge 5: indexOf should return the position (index) of the first element in the Erray that matches the input value
+- [ ] Challenge 6: lastIndexOf should return the position (index) of the last item in the Erray that matches the input value
 
 If you're not familiar with some of these methods, please refer to [MDN for more details](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#)
 
