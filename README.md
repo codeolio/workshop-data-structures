@@ -7,7 +7,7 @@
 
 ## Getting Started
 
-Step 1: Fork this repository by clicking (https://sammyk.s3.amazonaws.com/blog/images/2014-05-28/fork.png)
+Step 1: Fork this repository by clicking [!alt text](https://sammyk.s3.amazonaws.com/blog/images/2014-05-28/fork.png)
 
 Step 2: Clone this repository to your machine by clicking **Clone or Download** 
 - If you do not have an IDE and Node installed on your machine, you can use https://gitpod.io. Follow the steps on gitpod to get setup
