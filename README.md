@@ -22,8 +22,29 @@ Step 1: In your terminal run the command **npm test**
 Step 2: On your first test, all unit tests should fail (You need to write some code!). Write some code that you think works. If you run it and see some green, you've passed!
 
 ### Dynamic Array
-<img href="https://1.bp.blogspot.com/_kLg3mPfGL6E/S_nN7gNjwHI/AAAAAAAAALA/v3AcbLZ-kAc/s1600/one+dimension+array.jpg">
-What is an Array? 
+
+The array is a basic abstract data structure that holds an ordered collection of items accessible by an integer index. The items held can be anything from primitive data types such as integers to more complex types like objects (even other arrays!). 
+
+A mentioned above, array elements are stored in a given index and can be retrieved at a later time by specifying the same index. The way these indices work is specific to the implementation and programming language, but don't worry too much about that. 
+
+The main difference between a static array and a dynamic array is the ability to grow in size. In some programming languages (not in JavaScript) you need to specify exactly how much memory you want to store. This makes sure you can reserve enough adjacent places in memory to place each element for the given structure. If you never want this size to grow larger than what's initially declared, then you would say this array is static because it will never contain more than 10 elements. 
+
+A structure is considered to be dynamic if it is not fixed in size. For example, if we have 10 elements and want to add another, go for it! 
+
+Again, depending on how this structure is being implemented, there may be some performance implications to increasing the size of an array. JavaScript treats arrays a bit differently than a compiled languge like Java, but no need to think too much about that for now. 
+
+There's no better way to learn about what the array is and does than to build one yourself! Your challenges are below: 
+
+- [] Challenge 1: Push method should add a single value to the end of the array, adjust length
+- [] Challenge 1.5: (BONUS!) Refactor your push method so that it can add multiple values to the end of the array, adjust length
+- [] Challenge 2: Pop should return the last value pushed to the array, adjust length (don't go negative!)
+- [] Challenge 3: Shift method should add one value to the beginning of the array, adjust length
+- [] Challenge 3.5: (BONUS!) Refactor shift method so that it adds multiple values to the beginning of the array
+- [] Challenge 4: Unshift should remove and return the first element at the beginning of the array
+- [] Challenge 5: indexOf should return the position (index) of the first element in the Erray that matches the input value
+- [] Challenge 6: lastIndexOf should return the position (index) of the last item in the Erray that matches the input value
+
+If you're not familiar with some of these methods, please refer to [MDN for more details](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#)
 
 
 ### Stack
