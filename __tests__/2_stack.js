@@ -109,7 +109,7 @@ xdescribe('Stack Data Structure', () => {
       stack.push('B');
       stack.push('C');
       stack.push('D');
-      expect(stack.toString()).to.equal('ABCD');
+      expect(stack.toString()).to.equal('DCBA');
     });
 
     it('Challenge 8 - toArray Method: toArray method should return an array containing the elements in the stack from bottom to top', () => {
@@ -118,7 +118,7 @@ xdescribe('Stack Data Structure', () => {
       stack.push('B');
       stack.push('C');
       stack.push('D');
-      expect(stack.toArray()).to.have.ordered.members(['A', 'B', 'C', 'D']);
+      expect(stack.toArray()).to.have.ordered.members(['D', 'C', 'B', 'A']);
     });
 
     it('Challenge 9 - Contains Method: Contains method should return true if value is in structure, false if not', () => {

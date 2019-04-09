@@ -109,7 +109,7 @@ Stack.prototype.peek = function () {
   * description: should return a string containing all elements in stack. If no elements, return empty string
   * example:
     - stack: { '0': 'A', '1': 'B', '2': 'C' }
-    - output: 'ABC'
+    - output: 'CBA'
 */
 Stack.prototype.toString = function () {
   // insert code here
@@ -120,7 +120,7 @@ Stack.prototype.toString = function () {
   * description: should return an array containing all values
   * example:
     - stack: { '0': 'A', '1': 'B', '2': 'C' }
-    - output: ['A', 'B', 'C'] 
+    - output: ['C', 'B', 'A'] 
 */
 Stack.prototype.toArray = function () {
   // insert code here
