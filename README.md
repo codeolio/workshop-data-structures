@@ -22,7 +22,7 @@ Step 1: In your terminal run the command **npm test**
 Step 2: On your first test, all unit tests should fail (You need to write some code!). Write some code that you think works. If you run it and see some green, you've passed!
 
 ### Dynamic Array
-<img src="https://1.bp.blogspot.com/_kLg3mPfGL6E/S_nN7gNjwHI/AAAAAAAAALA/v3AcbLZ-kAc/s1600/one+dimension+array.jpg>
+<img href="https://1.bp.blogspot.com/_kLg3mPfGL6E/S_nN7gNjwHI/AAAAAAAAALA/v3AcbLZ-kAc/s1600/one+dimension+array.jpg>
 What is an Array? 
 
 
