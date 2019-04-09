@@ -1,5 +1,5 @@
 /**********************************************************************************************************************************************
- * @module  Erray
+ * @module  MyArray
  * @author  david-dest01
  * @date    03/23/19
  * @description Begin Erray (Array Data Structure) challenge below. 
@@ -9,7 +9,7 @@
  *                - For extensions, remove 'x' before describe on line ___ in testing file then save.
  **********************************************************************************************************************************************/
 
-function Erray () {
+function MyArray () {
   this.contents = {};
   this.length = 0;
 }
@@ -30,7 +30,7 @@ function Erray () {
     - input: push('B', 'C', 'D')
     - array after: { 0: 'A', 1: 'B', 2: 'C', 3: 'D' }
 */
-Erray.prototype.push = function (value) {
+MyArray.prototype.push = function (value) {
   // insert code here
 };
 
@@ -44,7 +44,7 @@ Erray.prototype.push = function (value) {
     - output: 
     - array before: { '0': 'A', '1': 'B' }
 */
-Erray.prototype.pop = function () {
+MyArray.prototype.pop = function () {
   // insert code here
 };
 
@@ -64,7 +64,7 @@ Erray.prototype.pop = function () {
     - input: shift('B', 'C', 'D')
     - array after: { 0: 'B', 1: 'C', 2: 'D', 3: 'A' }
 */
-Erray.prototype.shift = function (value) {
+MyArray.prototype.shift = function (value) {
   // insert code here
 };
 
@@ -78,7 +78,7 @@ Erray.prototype.shift = function (value) {
     - input: unshift()
     - array after: { 0: 'B', 1: 'C' }
 */ 
-Erray.prototype.unshift = function () {
+MyArray.prototype.unshift = function () {
   // insert code here
 };
 
@@ -93,7 +93,7 @@ Erray.prototype.unshift = function () {
     - input: indexOf('D')
     - output: -1
 */ 
-Erray.prototype.indexOf = function (value) {
+MyArray.prototype.indexOf = function (value) {
   // insert code here
 };
 
@@ -108,10 +108,10 @@ Erray.prototype.indexOf = function (value) {
     - input: indexOf('D')
     - output: -1
 */ 
-Erray.prototype.lastIndexOf = function (value) {
+MyArray.prototype.lastIndexOf = function (value) {
   // insert code here
 };
 
 
 /* please do not touch */ 
-module.exports = Erray;
+module.exports = MyArray;

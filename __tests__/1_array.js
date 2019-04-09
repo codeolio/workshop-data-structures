@@ -2,14 +2,14 @@
 /*                     DO NOT EDIT                       */
 /*********************************************************/
 const expect = require('chai').expect;
-const Erray = require('../src/1_array.js')
+const MyArray = require('../src/1_array.js')
 
-xdescribe('Array (Erray) Data Structure', () => {
+xdescribe('MyArray (Erray) Data Structure', () => {
   let array = null;
 
-  describe('Erray: Adding and Removing Elements', () => {
+  describe('MyArray: Adding and Removing Elements', () => {
     beforeEach(() => {
-      array = new Erray;
+      array = new MyArray;
     });
 
     it('Constructor should have a contents property that is an object and a length property initialized at 0', () => {
