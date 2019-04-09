@@ -89,7 +89,7 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 6: ```lastIndexOf``` should return the position (index) of the last item in the Erray that matches the input value
 
 ### Binary Search Tree
-<img src="./assets/binary-search-tree.png" width="250" height:"250" >
+<img src="./assets/binary-search-tree.png" width="250px" height:"250px" >
 
 - [ ] Challenge 1: ```push``` method should add a single value to the end of the array, adjust length
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method so that it can add multiple values to the end of the array, adjust length
