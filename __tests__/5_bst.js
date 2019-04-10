@@ -12,7 +12,7 @@ describe('Binary Search Tree Data Structures', () => {
   describe('Binary Search Tree: Adding, Removing and Traversing', () => {
 
     before(() => {
-      bst = new BinarySearchTree;
+      bst = new BinarySearchTree(10);
     });
   
     it('Binary Search Tree should have a value property, left property and right property pointing at null values', () => {
@@ -23,7 +23,7 @@ describe('Binary Search Tree Data Structures', () => {
     
     it('Challenge 1: Insert should add a new value (subtree) to tree', () => {
       expect(bst.__proto__).to.have.property('insert').to.be.a('function');
-      const treeValues = [10, 5, 8, 1, 15, 13, 17];
+      const treeValues = [5, 8, 1, 15, 13, 17];
       treeValues.forEach((value) => {
         bst.insert(value);
       });
