@@ -27,7 +27,7 @@ Step 1: In your terminal run the command **npm test**
 Step 2: On your first test, all unit tests should fail (You need to write some code!). Write some code that you think works. If you run it and see some green, you've passed!
 
 ### Dynamic Array
-<img src="./assets/one-dimension-array.jgp">
+<img src="./assets/one-dimension-array.jpg">
 The array is a basic abstract data structure that holds an ordered collection of items accessible by an integer index. The items held can be anything from primitive data types such as integers to more complex types like objects (even other arrays!). 
 
 A mentioned above, array elements are stored in a given index and can be retrieved at a later time by specifying the same index. The way these indices work is specific to the implementation and programming language, but don't worry too much about that. 
@@ -81,7 +81,7 @@ There's no better way to learn about what the queue is and does than to build on
 - [Geeks for Geeks: Stack](https://www.geeksforgeeks.org/stack-data-structure/)
 
 ### Queue
-<img src="./assets/queue-data-structure.png" height="129" width="267">
+<img src="./assets/queue-data-structure.png" height="129" width="267.84">
 A queue is very similar to the stack, except rather than following the principle of LIFO (last in first out) they instead follow the principle of FIFO (first in first out). The first item added to the equeue is the first item that leaves the queue. 
 
 Think of a queue as being similar to a line to a soda machine. The first person in line will be the first person to receive a soda, the second person in line will be the second one to get a sode, and so on. Another real-world example is a water slide. You enter the water slide from the top/beginning, and leave it from the end. If you're first to go down the slide, you're first to leave the slide. 
