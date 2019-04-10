@@ -59,11 +59,11 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 
 The stack is an abstract data type with a predefined capacity (stack overflow!). It's a pretty simple data structure because it allows the adding and removing of items/elements from just one end of the stack, typically called the 'top' of the stack. 
 
-When we add a new element, it goes on the top of the stack. This is called pushing to the stack. When we want to remove something from the stack, we remove only the item that sits on the top of the stack, nothing below that item. 
+When we add a new element, it goes on the top of the stack. This is called pushing to the stack. When we want to remove something from the stack, we remove only the item that sits on the top of the stack, nothing below that item. The stack follows the principle of Last in First Out: The last item added to the stack will be the first item to leave the stack. 
 
 You can conceptually think of a stack as being a stack of clean dinner plates. When we finish drying off a plate, we stick that plate on an existing pile of plates. If we want to remove a plate for use, we'll take from the top of the pile. Eventually, when we pile on too many plates, the stack of plates will fall. You can think of this as being a stack overflow - we hit the max number of plates the stack can support. 
 
-There's no better way to learn about what the array is and does than to build one yourself! Your challenges are below. For this exercise, you will not have to set a cap on your stack.
+There's no better way to learn about what the queue is and does than to build one yourself! Your challenges are below. For this exercise, you will not have to set a cap on your stack.
 
 - [ ] Challenge 1: ```push``` method should add a single value to the top of the stack, adjust length
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method so that it can add multiple values to the top of the stack, adjust length
@@ -73,7 +73,7 @@ There's no better way to learn about what the array is and does than to build on
 - [ ] Challenge 5: ```isEmpty``` should return true if no items are in the stack, and false if it contains items
 - [ ] Challenge 6: ```peek``` should return the value at the top of the stack without removing it
 - [ ] Challenge 7: ```toString``` shuold return string representation of the stack, from top to bottom
-- [ ] Challenge 8: ```toArray``` shuold return array representation of the stack, from top to bottom
+- [ ] Challenge 8: ```toArray``` should return an array representation of the stack, from top to bottom
 - [ ] Challenge 9: ```contains``` should return true of the item is in the stack, false if not
 
 - [Wikipedia: Stack Data Structure](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
@@ -82,18 +82,23 @@ There's no better way to learn about what the array is and does than to build on
 
 ### Queue
 <img src="./assets/queue-data-structure.png">
+A queue is very similar to the stack, except rather than following the principle of LIFO (last in first out) they instead follow the principle of FIFO (first in first out). The first item added to the equeue is the first item that leaves the queue. 
 
+Think of a queue as being similar to a line to a soda machine. The first person in line will be the first person to receive a soda, the second person in line will be the second one to get a sode, and so on. Another real-world example is a water slide. You enter the water slide from the top/beginning, and leave it from the end. If you're first to go down the slide, you're first to leave the slide. 
 
+Some quick terminology, when we add something to a queue, we enqueue it. When we remove something from the queue, we dequeue it.
+
+There's no better way to learn about what the queue is and does than to build one yourself! Your challenges are below.
 
 - [ ] Challenge 1: ```enqueue``` should add single item to the end of the queue
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```enqueue``` method so that it can add multiple items to the end of the queue
 - [ ] Challenge 2: ```dequeue``` should return the item at the beginning of the queue WITHOUT going negative
 - [ ] Challenge 3: ```count``` should return the total number of items in the queue
 - [ ] Challenge 4: ```clear``` should remove all items from the queue, but not delete the queue entirely
-- [ ] Challenge 5: ```isEmpty``` shold return true if no items are in the queue, false if items do exist in queue
+- [ ] Challenge 5: ```isEmpty``` should return true if no items are in the queue, false if items do exist in queue
 - [ ] Challenge 6: ```peek``` should return the element at the front of the queue
 - [ ] Challenge 7: ```toString``` should return all items in the queue from end to beginning
-- [ ] Challenge 8: ```toArray``` should return all items in the queue in an array from end to beginning
+- [ ] Challenge 8: ```toArray``` should return all items in the queue as an array
 - [ ] Challenge 9: ```contains``` should return true if a specific value is in queue, false if not
 
 - [Wikipedia: Queue Data Structure](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
@@ -102,6 +107,13 @@ There's no better way to learn about what the array is and does than to build on
 
 ### Singly Linked List
 <img src="./assets/linked-list-singly.png">
+The linked list is a special list abstract data type. In a linked list, we only have at maximum two points of entery: a head and tail pointer. The head pointer points at the first node in the linked list, and the tail pointer points at the last node of the linked list. 
+
+What is a node? A node bundles two things: information (data) and a reference pointer to a neighboring (the next) node in the linked list. Unlike arrays where we can access information randomly based on some given index that maps to a value, the only way to access a nodes value is to traverse through the linked list, started at the head and working your way to the tail. 
+
+Linked Lists are incredibly efficient (much more efficient than arrays) when it comes to adding, removing and inserting new values. For example, to append a new node, we simply adjust the current tail nodes next pointer and reassign tail to the new node. 
+
+A real world example of a linked list would be a train. We have a head train (where the conductor is) and the tail train (the last cart). If we want to append a new cart, we can simply add a new cart to the end. 
 
 - [ ] Challenge 1: ```push``` shoud add a new node to the end of the linked list, adjusts tail pointer
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method to add multiple nodes to end of linked list
@@ -122,8 +134,12 @@ There's no better way to learn about what the array is and does than to build on
 - [Tutorials Point: Linked List](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
 - [Geeks for Geeks: Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
-### Binary Tree
+### Binary (Search) Tree
 <img src="./assets/binary-search-tree.png" width>
+
+The binary tree is a tree with at most two children, A binary tree is made up of nodes, and each node has three properties: a value, a left child pointer and a right child pointer.
+
+A binary search tree is an ordered tree that gives us the ability to perform quick lookup opertations (binary search!). For each node, all elements in its left subtree are less-or-equal to the node value the parent; and all elements in its right subtree are greater than the node.
 
 - [ ] Challenge 1: ```insert``` method should add a new value to the tree
 - [ ] Challenge 2: ```contains``` takes a value and searches the tree for it. return true if the value is in the tree, false if not
