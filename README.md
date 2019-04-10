@@ -57,6 +57,13 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 ### Stack
 <img src="./assets/stack-data-structure.png">
 
+The stack is an abstract data type with a predefined capacity (stack overflow!). It's a pretty simple data structure because it allows the adding and removing of items/elements from just one end of the stack, typically called the 'top' of the stack. 
+
+When we add a new element, it goes on the top of the stack. This is called pushing to the stack. When we want to remove something from the stack, we remove only the item that sits on the top of the stack, nothing below that item. 
+
+You can conceptually think of a stack as being a stack of clean dinner plates. When we finish drying off a plate, we stick that plate on an existing pile of plates. If we want to remove a plate for use, we'll take from the top of the pile. Eventually, when we pile on too many plates, the stack of plates will fall. You can think of this as being a stack overflow - we hit the max number of plates the stack can support. 
+
+There's no better way to learn about what the array is and does than to build one yourself! Your challenges are below. For this exercise, you will not have to set a cap on your stack.
 
 - [ ] Challenge 1: ```push``` method should add a single value to the top of the stack, adjust length
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method so that it can add multiple values to the top of the stack, adjust length
@@ -75,6 +82,8 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 
 ### Queue
 <img src="./assets/queue-data-structure.png">
+
+
 
 - [ ] Challenge 1: ```enqueue``` should add single item to the end of the queue
 - [ ] Challenge 1.5: (BONUS!) Refactor your ```enqueue``` method so that it can add multiple items to the end of the queue
@@ -109,8 +118,11 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 12: ```getHead``` method shoud return the head node value of the linked list
 - [ ] Challenge 14: ```totalNodes``` method should return the total number of nodes in the linked list
 
+- [Wikipedia: Linked List Data Structure](https://en.wikipedia.org/wiki/Linked_list)
+- [Tutorials Point: Linked List](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+- [Geeks for Geeks: Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
-### Binary Search Tree
+### Binary Tree
 <img src="./assets/binary-search-tree.png" width>
 
 - [ ] Challenge 1: ```insert``` method should add a new value to the tree
@@ -122,3 +134,8 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 7: ```min``` method should return the smallest value in the binary search tree
 - [ ] Challenge 8: ```max``` method should return the largest value in the binary search tree
 - [ ] Challenge 9: ```remove``` method should remove a node from the BST without effecting any children nodes
+
+### Tree Traversal and Descriptions
+- [Wikipedia: Binary Tree](https://en.wikipedia.org/wiki/Binary_tree)
+- [Tutorials Point: Trees - Binary](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
+- [Geeks for Geeks: Binary](https://www.geeksforgeeks.org/binary-tree-data-structure/)
