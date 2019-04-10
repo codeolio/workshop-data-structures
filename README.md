@@ -2,7 +2,13 @@
 
 ## Overview
 
-// write a quick overview
+Welcome to CODEOLIO's Intro to Data Structures workshop. This workshop is meant to give you the fundamentals of some important data structures, such as arrays, stacks, queues, linked lists and binary search trees. 
+
+More challenges and data structures will be added in the feature, so be sure to keep an ear open for any updates. 
+
+Some of the descriptions below may be high-level, so if necessary please use additional online resources to gain a better understanding of each data structure operation if there's any confusion. 
+
+If you notice any errors, wish to make contributions or want to see something new/improved, please reach out! 
 
 
 ## Getting Started
@@ -79,24 +85,31 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 ### Singly Linked List
 <img src="./assets/linked-list-singly.png">
 
-- [ ] Challenge 1: ```push``` method should add a single value to the end of the array, adjust length
-- [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method so that it can add multiple values to the end of the array, adjust length
-- [ ] Challenge 2: ```pop``` should return the last value pushed to the array, adjust length (don't go negative!)
-- [ ] Challenge 3: ```shift``` method should add one value to the beginning of the array, adjust length
-- [ ] Challenge 3.5: (BONUS!) Refactor shift method so that it adds multiple values to the beginning of the array
-- [ ] Challenge 4: ```unshift``` should remove and return the first element at the beginning of the array
-- [ ] Challenge 5: ```indexOf``` should return the position (index) of the first element in the Erray that matches the input value
-- [ ] Challenge 6: ```lastIndexOf``` should return the position (index) of the last item in the Erray that matches the input value
+- [ ] Challenge 1: ```push``` shoud add a new node to the end of the linked list, adjusts tail pointer
+- [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method to add multiple nodes to end of linked list
+- [ ] Challenge 2: ```addToHead``` adds a new node to the head of the linked list, adjusts head pointer
+- [ ] Challenge 3: ```indexOf``` method should return the index of a specified value in the linked list. If the value does not exist, return -1
+- [ ] Challenge 4: ```remove``` should remove the specified node from the linked list
+- [ ] Challenge 5: ```removeHead``` method should remove the head node and adjust head pointer to point at subsequent node (if one exists)
+- [ ] Challenge 6: ```removeTail``` method should remove the tail node and adjust tail pointer to point at the preceding node (if one exists)
+- [ ] Challenge 7: ```getByIndex``` method should return the value of a node based on a specified index
+- [ ] Challenge 8: ```removeByIndex``` method should remove a node based on given index 
+- [ ] Challenge 9: ```isEmpty``` method should return true of no nodes are in linked list, false if nodes exist
+- [ ] Challenge 10: ```toString``` method should return a string representation of the linked list
+- [ ] Challenge 11: ```toArray``` method should return an array representation of the linked list
+- [ ] Challenge 12: ```getHead``` method shoud return the head node value of the linked list
+- [ ] Challenge 14: ```totalNodes``` method should return the total number of nodes in the linked list
+
 
 ### Binary Search Tree
-<img src="./assets/binary-search-tree.png">
+<img src="./assets/binary-search-tree.png" width>
 
-- [ ] Challenge 1: ```push``` method should add a single value to the end of the array, adjust length
-- [ ] Challenge 1.5: (BONUS!) Refactor your ```push``` method so that it can add multiple values to the end of the array, adjust length
-- [ ] Challenge 2: ```pop``` should return the last value pushed to the array, adjust length (don't go negative!)
-- [ ] Challenge 3: ```shift``` method should add one value to the beginning of the array, adjust length
-- [ ] Challenge 3.5: (BONUS!) Refactor shift method so that it adds multiple values to the beginning of the array
-- [ ] Challenge 4: ```unshift``` should remove and return the first element at the beginning of the array
-- [ ] Challenge 5: ```indexOf``` should return the position (index) of the first element in the Erray that matches the input value
-- [ ] Challenge 6: ```lastIndexOf``` should return the position (index) of the last item in the Erray that matches the input value
-
+- [ ] Challenge 1: ```insert``` method should add a new value to the tree
+- [ ] Challenge 2: ```contains``` takes a value and searches the tree for it. return true if the value is in the tree, false if not
+- [ ] Challenge 3: ```inOrderTraverse``` method visit all nodes of the tree in order (least to greatest), executing a given callback on each node value
+- [ ] Challenge 4: ```preOrderTraverse``` method visit all nodes of the tree in order from left to right visiting parent nodes first then children nodes (google more on pre-order traversal if you need more details)
+- [ ] Challenge 5: ```postOrderTraverse``` method visit all nodes of the tree in order from left to right visiting child nodes first then parent nodes (google more on pre-order traversal if you need more details), working its way up to the root (last node visited)
+- [ ] Challenge 6: ```breadthTraversal``` method should visit all nodes of binary search tree by level, starting at the 0th level (root node), and working its way down to the last level (deepest leaf),  executing a callback on each value
+- [ ] Challenge 7: ```min``` method should return the smallest value in the binary search tree
+- [ ] Challenge 8: ```max``` method should return the largest value in the binary search tree
+- [ ] Challenge 9: ```max``` method should remove a node from the BST without effecting any children nodes

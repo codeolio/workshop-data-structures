@@ -40,20 +40,20 @@ describe('Binary Search Tree Data Structures', () => {
     });
 
     it('Challenge 2: searches for the key in the tree and returns true if it exists and false if the node does not', () => {
-      expect(bst.__proto__).to.have.property('search').to.be.a('function');
+      expect(bst.__proto__).to.have.property('contains').to.be.a('function');
       /* ----------   valid subtrees ---------- */
-      expect(bst.search(10)).to.be.true;
-      expect(bst.search(5)).to.be.true;
-      expect(bst.search(1)).to.be.true;
-      expect(bst.search(8)).to.be.true;
-      expect(bst.search(15)).to.be.true;
-      expect(bst.search(13)).to.be.true;
-      expect(bst.search(17)).to.be.true;
+      expect(bst.contains(10)).to.be.true;
+      expect(bst.contains(5)).to.be.true;
+      expect(bst.contains(1)).to.be.true;
+      expect(bst.contains(8)).to.be.true;
+      expect(bst.contains(15)).to.be.true;
+      expect(bst.contains(13)).to.be.true;
+      expect(bst.contains(17)).to.be.true;
       /* ----------  nvalid subtrees ---------- */
-      expect(bst.search(11)).to.be.false;
-      expect(bst.search(20)).to.be.false;
-      expect(bst.search(3)).to.be.false;
-      expect(bst.search(6)).to.be.false;
+      expect(bst.contains(11)).to.be.false;
+      expect(bst.contains(20)).to.be.false;
+      expect(bst.contains(3)).to.be.false;
+      expect(bst.contains(6)).to.be.false;
     });
 
     it('Challenge 3: inOrderTraverse() visits all nodes of the tree using in-order traverse', () => {

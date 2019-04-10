@@ -236,7 +236,7 @@ describe('Linked List Structure', () => {
       expect(ll.getTail()).to.equal('C');
     });
 
-    it('Challenge 12: totalNodes returns the total number of nodes in linked list ', () => {
+    it('Challenge 14: totalNodes returns the total number of nodes in linked list ', () => {
       expect(ll.__proto__).to.have.property('totalNodes').to.be.a('function');
       expect(ll.totalNodes()).to.equal(0);
       ll.push('A');

@@ -25,10 +25,10 @@ BinarySearchTree.prototype.insert = function (value) {
 };
 
 /* CHALLENGE 2
-  * method: search
+  * method: contains
   * description: searches for the inputed value in the tree and returns true if it exists and false if the node does not
 */
-BinarySearchTree.prototype.search = function (value) {
+BinarySearchTree.prototype.contains = function (value) {
   // insert code here
 };
 
