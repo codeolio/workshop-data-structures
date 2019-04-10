@@ -27,7 +27,7 @@ Step 1: In your terminal run the command **npm test**
 Step 2: On your first test, all unit tests should fail (You need to write some code!). Write some code that you think works. If you run it and see some green, you've passed!
 
 ### Dynamic Array
-<img src="./assets/one-dimension-array.jpg">
+<img src="./assets/one-dimension-array.jpg" height="166.08" width="404.16">
 The array is a basic abstract data structure that holds an ordered collection of items accessible by an integer index. The items held can be anything from primitive data types such as integers to more complex types like objects (even other arrays!). 
 
 A mentioned above, array elements are stored in a given index and can be retrieved at a later time by specifying the same index. The way these indices work is specific to the implementation and programming language, but don't worry too much about that. 
@@ -55,7 +55,7 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [Tutorials Point: Arrays](https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm)
 
 ### Stack
-<img src="./assets/stack-data-structure.png">
+<img src="./assets/stack-data-structure.png" height="192" width="267.84">
 
 The stack is an abstract data type with a predefined capacity (stack overflow!). It's a pretty simple data structure because it allows the adding and removing of items/elements from just one end of the stack, typically called the 'top' of the stack. 
 
@@ -106,7 +106,7 @@ There's no better way to learn about what the queue is and does than to build on
 - [Geeks for Geeks: Queue](https://www.geeksforgeeks.org/queue-data-structure/)
 
 ### Singly Linked List
-<img src="./assets/linked-list-singly.png">
+<img src="./assets/linked-list-singly.png" height="147.84" width="350.4">
 The linked list is a special list abstract data type. In a linked list, we only have at maximum two points of entery: a head and tail pointer. The head pointer points at the first node in the linked list, and the tail pointer points at the last node of the linked list. 
 
 What is a node? A node bundles two things: information (data) and a reference pointer to a neighboring (the next) node in the linked list. Unlike arrays where we can access information randomly based on some given index that maps to a value, the only way to access a nodes value is to traverse through the linked list, started at the head and working your way to the tail. 
@@ -135,7 +135,7 @@ A real world example of a linked list would be a train. We have a head train (wh
 - [Geeks for Geeks: Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
 ### Binary (Search) Tree
-<img src="./assets/binary-search-tree.png" width>
+<img src="./assets/binary-search-tree.png" height="220.8" width="264.96">
 
 The binary tree is a tree with at most two children, A binary tree is made up of nodes, and each node has three properties: a value, a left child pointer and a right child pointer.
 
