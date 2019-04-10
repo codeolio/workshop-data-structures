@@ -112,4 +112,4 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 6: ```breadthTraversal``` method should visit all nodes of binary search tree by level, starting at the 0th level (root node), and working its way down to the last level (deepest leaf),  executing a callback on each value
 - [ ] Challenge 7: ```min``` method should return the smallest value in the binary search tree
 - [ ] Challenge 8: ```max``` method should return the largest value in the binary search tree
-- [ ] Challenge 9: ```max``` method should remove a node from the BST without effecting any children nodes
+- [ ] Challenge 9: ```remove``` method should remove a node from the BST without effecting any children nodes
