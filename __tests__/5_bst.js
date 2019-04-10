@@ -92,8 +92,8 @@ describe('Binary Search Tree Data Structures', () => {
   xdescribe('Binary Search Trees Extension Methods', () => {
 
     before(() => {
-      bst = new BinarySearchTree;
-      const treeValues = [10, 5, 8, 1, 15, 13, 17];
+      bst = new BinarySearchTree(10);
+      const treeValues = [5, 8, 1, 15, 13, 17];
       treeValues.forEach((value) => {
         bst.insert(value);
       });

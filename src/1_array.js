@@ -31,7 +31,7 @@ function MyArray () {
     - array after: { 0: 'A', 1: 'B', 2: 'C', 3: 'D' }
 */
 MyArray.prototype.push = function (value) {
-  // insert code here
+  // we have two properties, contents 
 };
 
 /* CHALLENGE 2
