@@ -4,12 +4,11 @@
 
 Welcome to CODEOLIO's Intro to Data Structures workshop. This workshop is meant to give you the fundamentals of some important data structures, such as arrays, stacks, queues, linked lists and binary search trees. 
 
-More challenges and data structures will be added in the feature, so be sure to keep an ear open for any updates. 
+More challenges and data structures will be added in the feature, so be sure to watch the repository for any updates.
 
-Some of the descriptions below may be high-level, so if necessary please use additional online resources to gain a better understanding of each data structure operation if there's any confusion. 
+Some of the descriptions below may be high-level, so if you need additional information to help you understand each data structure you can click on the links provided.
 
 If you notice any errors, wish to make contributions or want to see something new/improved, please reach out! 
-
 
 ## Getting Started
 
@@ -52,6 +51,8 @@ There's no better way to learn about what the array is and does than to build on
 
 If you're not familiar with some of these methods, please refer to [MDN for more details](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#)
 
+- [Wikipedia: Array Data Structure](https://en.wikipedia.org/wiki/Array_data_structure)
+- [Tutorials Point: Arrays](https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm)
 
 ### Stack
 <img src="./assets/stack-data-structure.png">
@@ -68,6 +69,10 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 8: ```toArray``` shuold return array representation of the stack, from top to bottom
 - [ ] Challenge 9: ```contains``` should return true of the item is in the stack, false if not
 
+- [Wikipedia: Stack Data Structure](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [Tutorials Point: Stack](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm)
+- [Geeks for Geeks: Stack](https://www.geeksforgeeks.org/stack-data-structure/)
+
 ### Queue
 <img src="./assets/queue-data-structure.png">
 
@@ -81,6 +86,10 @@ If you're not familiar with some of these methods, please refer to [MDN for more
 - [ ] Challenge 7: ```toString``` should return all items in the queue from end to beginning
 - [ ] Challenge 8: ```toArray``` should return all items in the queue in an array from end to beginning
 - [ ] Challenge 9: ```contains``` should return true if a specific value is in queue, false if not
+
+- [Wikipedia: Queue Data Structure](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Tutorials Point: Queue](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm)
+- [Geeks for Geeks: Queue](https://www.geeksforgeeks.org/queue-data-structure/)
 
 ### Singly Linked List
 <img src="./assets/linked-list-singly.png">
