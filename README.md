@@ -84,7 +84,7 @@ There's no better way to learn about what the queue is and does than to build on
 <img src="./assets/queue-data-structure.png" height="129" width="267.84">
 A queue is very similar to the stack, except rather than following the principle of LIFO (last in first out) they instead follow the principle of FIFO (first in first out). The first item added to the equeue is the first item that leaves the queue. 
 
-Think of a queue as being similar to a line to a soda machine. The first person in line will be the first person to receive a soda, the second person in line will be the second one to get a sode, and so on. Another real-world example is a water slide. You enter the water slide from the top/beginning, and leave it from the end. If you're first to go down the slide, you're first to leave the slide. 
+Think of a queue as being similar to the a line a soda machine. The first person in line will be the first person to receive a soda, the second person in line will be the second person to get a sode, and so on. Another real-world example is a water slide. You enter the water slide from the top/beginning, and leave it from the end. If you're first to go down the slide, you're first to leave the slide. 
 
 Some quick terminology, when we add something to a queue, we enqueue it. When we remove something from the queue, we dequeue it.
 
